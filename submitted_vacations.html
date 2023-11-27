@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Resource Website</title>
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css" >
+    <!-- style css  -->
+    <!-- style css  -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- icon -->
+    <link rel="shortcut icon" href="images/icon.png">
+    <!-- other pages  -->
+    
+</head>
+<body>
+  <!-- start header  -->
+  <header>
+    <div class="container">
+      <nav>
+        <span class="logo">
+          <a href="#">Human Resource</a>
+        </span>
+        <i class="fas fa-bars toggle-menu"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="add_employee.html" id="add">Add </a></li>
+          <li><a href="edit_employee.html" id="edit">Edit </a></li>
+          <li><a href="search_employee.html" id="search">Search </a></li>
+          <li><a href="vacation_form.html" id="vac-form">Vacation Form</a></li>
+          <li><a href="submitted_vacations.html" id="submit-vac">Submitted Vacations</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <div class="submit-vac">
+      <div class="container">
+        <div class="table">
+          <table>
+            <caption>
+              <h1>Submitted Vacations</h1>
+            </caption>
+      
+            <thead>
+              <th>Name</th>
+              <th class="sm">ID</th>
+              <th class="sm">From</th>
+              <th class="sm">To</th>
+              <th>Reason</th>
+              <th>Approval/Rejection</th>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><input type="text" value="Mazin Altaher" disabled /></td>
+                <td><input type="text" value="20210713" class="sm" disabled /></td>
+                <td><input type="text" value="2023/10/7" class="sm" disabled /></td>
+                <td><input type="text" value="2023/11/10" class="sm" disabled /></td>
+                <td><input type="text" value="travels to Alex" disabled /></td>
+                <td class="mid">
+                  <button type="submit" name="approve" value="approve" class="approve">Approve</button>
+                  <button type="submit" name="reject" value="reject" class="reject">Reject</button>
+                </td>
+              </tr>
+  
+              <tr>
+                  <td><input type="text" value="Ahmed Mohammed" disabled /></td>
+                  <td><input type="text" value="20210714" class="sm" disabled /></td>
+                  <td><input type="text" value="2023/10/8" class="sm" disabled /></td>
+                  <td><input type="text" value="2023/11/9" class="sm" disabled /></td>
+                  <td><input type="text" value="needs to relaxation"  disabled /></td>
+                  <td class="mid">
+                    <button type="submit" name="approve" value="approve" class="approve">Approve</button>
+                    <button type="submit" name="reject" value="reject" class="reject">Reject</button>
+                  </td>
+              </tr>
+  
+              <tr>
+                <td><input type="text" value="Wesam Fajr" disabled /></td>
+                <td><input type="text" value="20210715" class="sm" disabled /></td>
+                <td><input type="text" value="2023/10/7" class="sm" disabled /></td>
+                <td><input type="text" value="2023/10/10" class="sm" disabled /></td>
+                <td><input type="text" value="confused" disabled /></td>
+                <td class="mid">
+                  <button type="submit" name="approve" value="approve" class="approve">Approve</button>
+                  <button type="submit" name="reject" value="reject" class="reject">Reject</button>
+                </td>
+              </tr>
+  
+              <tr>
+                <td><input type="text" value="Mostafa Adam" disabled /></td>
+                <td><input type="text" value="20210716" class="sm" disabled /></td>
+                <td><input type="text" value="2023/9/7" class="sm" disabled /></td>
+                <td><input type="text" value="2023/10/1" class="sm" disabled /></td>
+                <td><input type="text" value="patient" disabled /></td>
+                <td class="mid">
+                  <button type="submit" name="approve" value="approve" class="approve">Approve</button>
+                  <button type="submit" name="reject" value="reject" class="reject">Reject</button>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,828 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+:root {
+  --first-color: #F3EEEA;
+  --second-color: #EBE3D5;
+  --second-alpha-color: #ebe3d5d3;
+  --third-color: #B0A695;
+  --fourth-color: #776B5D;
+  --fifth-color:  #EAC696;
+  --fifth-alpha-color: #eac696d5;
+  --sixth-color:  #C8AE7D;
+  --seventh-color:  #765827;
+  --eighth-color:  #65451F;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.container {
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+/* media quieries */
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* start header  */
+header{
+  background-color: var(--second-color);
+  font-weight: bold;
+}
+header .container{
+  position: relative;
+}
+header .logo a{
+  font-size: 28px;
+  color: var(--eighth-color);
+  background-color: var(--fifth-color);
+  padding: 0 10px;
+  border-radius: 5px;
+}
+.toggle-menu{
+  display: none;
+  color: var(--eighth-color);
+  font-size: 22px;
+  font-weight: 900;
+}
+header .toggle-menu:hover + ul{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  top: 99%;
+  right: 0;
+  background-color: var(--second-color);
+  z-index: 2;
+  border-radius: 5px;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: var(--eighth-color);
+  font-size: 20px;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+header nav ul li a:hover{
+  background-color: var(--fifth-color);
+}
+/* media quieries for header */
+/* Mobile */
+@media (max-width: 767px) {
+  .container {
+    width: 95%;
+  }
+  header .logo a{
+    font-size: 20px;
+  }
+  header nav ul{
+    display: none;
+    width: 180px;
+  }
+
+  header nav ul li a{
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .toggle-menu {
+    display: block;
+  }
+
+}
+/* Small and medium */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: 95%;
+  }
+  header .logo a{
+    font-size: 20px;
+  }
+  header nav ul li a{
+    font-size: 16px;
+  }
+
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  header nav ul{
+    display: flex;
+  }
+}
+
+/* end header  */
+/* start landing page  */
+.landing {
+position: relative;
+min-height: calc(100vh - 50px);
+background-color: var(--fifth-color);
+background-image: url(../images/ezgif-3-f5b26d6a57.jpg);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+width: 100%;
+}
+.landing::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.landing .container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.landing .text{
+  text-align: center;
+  background-color: var(--second-alpha-color);
+  padding: 50px;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: black 0px 0px 20px;
+}
+.landing .container h1 {
+  font-size: 50px;
+  color: var(--eighth-color);
+  margin-bottom: 20px;
+}
+.landing .container p {
+  line-height: 1.7;
+  font-size: 18px;
+  color: #65451F;
+}
+/* media quieries for landing */
+/* Mobile */
+@media (max-width: 767px) {
+  .landing .text{
+    padding: 10px;
+  }
+  .landing .text h1{
+    font-size: 30px;
+  }
+  .landing .text p{
+    font-size: 16px;
+  }
+}
+/* Small and medium */
+@media (min-width: 768px) and (max-width: 1199px) {
+}
+/* Large */
+@media (min-width: 1200px) {
+}
+
+/* end landing page  */
+
+/* start of add employee */
+.add-employee {
+  position: relative;
+  min-height: calc(100vh - 50px);
+  background-color: var(--fifth-color);
+  background-image: url(../images/ezgif-3-f5b26d6a57.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.add-employee::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.add-employee .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.add-employee .container .form{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--second-alpha-color);
+  min-width: 700px;
+  max-width: 1000px;
+  padding: 10px 20px 50px;
+  border-radius: 10px;
+  box-shadow: black 0px 0px 20px;
+  align-items: center;
+}
+.add-employee .container .form h1 {
+  font-size: 40px;
+  color: var(--eighth-color);
+  margin-bottom: 30px;
+  
+}
+.add-employee .container .form form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  width: 100%;
+}
+.add-employee label {
+  font-size: 20px;
+  color: var(--seventh-color);
+  font-weight: bold;
+  margin-left: 5px;
+}
+.add-employee input,
+.add-employee select {
+  padding: 10px;
+  display: block;
+  background-color: var(--fourth-color);
+  border-radius: 5px;
+  width: 100%;
+  border: 3px solid var(--first-color);
+  outline: none;
+  color: var(--first-color);
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+.add-employee input[type="submit"]{
+  grid-column: span 2;
+  text-shadow: white 1px 1px 2px;
+  border-width: 5px;
+}
+.add-employee input[type="submit"]:hover{
+  background-color: var(--third-color);
+  cursor: pointer;
+}
+/* media quieries for add employee */
+/* Mobile */
+@media (max-width: 767px) {
+.add-employee .container .form{
+  min-width: 100%;
+  padding: 10px;
+}
+.add-employee .container .form h1 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.add-employee .container .form form{
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+}
+.add-employee form label{
+  font-size: 16px;
+  font-weight: 600;
+}
+.add-employee form input,
+.add-employee form select{
+  font-size: 14px;
+  font-weight: 100;
+  padding: 3px 5px;
+  border-width: 3px;
+  margin: 0 0 5px;
+}
+.add-employee input[type="submit"]{
+  width: 150px;
+  align-self: center;
+  padding: 5px 0;
+  font-weight: 600;
+  }
+}
+
+/* end of add employee */
+
+/* start of edit employee */  
+.edit-employee {
+  position: relative;
+  min-height: calc(100vh - 50px);
+  background-color: var(--fifth-color);
+  background-image: url(../images/ezgif-3-f5b26d6a57.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.edit-employee::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.edit-employee .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.edit-employee .container .form{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--second-alpha-color);
+  min-width: 700px;
+  max-width: 1000px;
+  padding: 10px 20px 50px;
+  border-radius: 10px;
+  box-shadow: black 0px 0px 20px;
+  align-items: center;
+}
+.edit-employee .container .form h1 {
+  font-size: 40px;
+  color: var(--eighth-color);
+  margin-bottom: 30px;
+}
+.edit-employee .container .form form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  width: 100%;
+}
+.edit-employee label {
+  font-size: 20px;
+  color: var(--seventh-color);
+  font-weight: bold;
+  margin-left: 5px;
+}
+.edit-employee input,
+.edit-employee select {
+  padding: 10px;
+  display: block;
+  background-color: var(--fourth-color);
+  border-radius: 5px;
+  width: 100%;
+  border: 3px solid var(--first-color);
+  outline: none;
+  color: var(--first-color);
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+.edit-employee [type="submit"]{
+  grid-column: span 2;
+  text-shadow: white 1px 1px 2px;
+  border-width: 5px;
+}
+.edit-employee input[type="submit"]:hover{
+  background-color: var(--third-color);
+  cursor: pointer;
+}
+/* media quieries for add employee */
+/* Mobile */
+@media (max-width: 767px) {
+  .edit-employee .container .form{
+    min-width: 100%;
+    padding: 10px;
+  }
+  .edit-employee .container .form h1 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  .edit-employee .container .form form{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+  }
+  .edit-employee form label{
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .edit-employee form input,
+  .edit-employee form select{
+    font-size: 14px;
+    font-weight: 100;
+    padding: 3px 5px;
+    border-width: 3px;
+    margin: 0 0 5px;
+  }
+  .edit-employee input[type="submit"]{
+    width: 150px;
+    align-self: center;
+    padding: 5px 0;
+    font-weight: 600;
+    }
+}
+
+/* end of edit employee */
+
+/* start of search */
+.search{
+  position: relative;
+  min-height: calc(100vh - 50px);
+  background-color: var(--fifth-color);
+  background-image: url(../images/ezgif-3-f5b26d6a57.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.search::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.search .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.search .container .search-by-name{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--second-alpha-color);
+  min-width: 700px;
+  max-width: 1000px;
+  padding: 10px 20px 50px;
+  border-radius: 10px;
+  box-shadow: black 0px 0px 20px;
+}
+.search .container h1{
+  font-size: 40px;
+  color: var(--eighth-color);
+}
+.search .container form{
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.search .container form label{
+  font-size: 25px;
+  margin-left: 5px;
+  color: var(--seventh-color);
+  font-weight: bold;
+}
+.search .container form input{
+  padding: 10px;
+  background-color: var(--fourth-color);
+  border-radius: 5px;
+  width: 100%;
+  border: 3px solid var(--first-color);
+  outline: none;
+  color: var(--first-color);
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+.search .container form input[type="submit"]{
+  text-shadow: white 1px 1px 2px;
+  margin-top: 15px;
+  border-width: 5px;
+  width: 150px;
+  align-self: center;
+}
+.search .container form input[type="submit"]:hover{
+  background-color: var(--third-color);
+  cursor: pointer;
+}
+/* media quieries for search */
+/* Mobile */
+@media (max-width: 767px) {
+  .search .container .search-by-name{
+    min-width: 100%;
+    padding: 10px;
+  }
+  .search .container h1 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  .search .container form label{
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .search .container form input,
+  .search .container form select{
+    font-size: 14px;
+    font-weight: 100;
+    padding: 3px 5px;
+    border-width: 3px;
+    margin: 0 0 5px;
+  }
+  .search .container form input[type="submit"]{
+    width: 150px;
+    align-self: center;
+    padding: 5px 0;
+    font-weight: 600;
+    }
+}
+/* end of search */
+
+/* start of vacation form */
+.vac-form{
+  position: relative;
+  min-height: calc(100vh - 50px);
+  background-color: var(--fifth-color);
+  background-image: url(../images/ezgif-3-f5b26d6a57.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.vac-form::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.vac-form .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.vac-form .container .form{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--second-alpha-color);
+  min-width: 700px;
+  max-width: 1000px;
+  padding: 10px 20px 50px;
+  border-radius: 10px;
+  box-shadow: black 0px 0px 20px;
+  align-items: center;
+}
+.vac-form .container .form h1 {
+  font-size: 40px;
+  color: var(--eighth-color);
+}
+.vac-form .container .form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.vac-form label {
+  font-size: 20px;
+  color: var(--seventh-color);
+  font-weight: bold;
+  margin-left: 5px;
+}
+.vac-form input,
+.vac-form select {
+  padding: 10px;
+  display: block;
+  background-color: var(--fourth-color);
+  border-radius: 5px;
+  width: 100%;
+  border: 3px solid var(--first-color);
+  outline: none;
+  color: var(--first-color);
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.vac-form .container .form form input[type="submit"]{
+  text-shadow: white 1px 1px 2px;
+  font-size: 20px;
+  margin-top: 30px;
+  border-width: 5px;
+  width: 150px;
+  align-self: center;
+}
+.vac-form input[type="submit"]:hover{
+  background-color: var(--third-color);
+  cursor: pointer;
+}
+/* media quieries for add employee */
+/* Mobile */
+@media (max-width: 767px) {
+  .vac-form .container .form{
+    min-width: 100%;
+    padding: 10px;
+  }
+  .vac-form .container .form h1 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  .vac-form .container .form form{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+  }
+  .vac-form form label{
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .vac-form form input,
+  .vac-form form select{
+    font-size: 14px;
+    font-weight: 100;
+    padding: 3px 5px;
+    border-width: 3px;
+    margin: 0 0 5px;
+  }
+  .vac-form input[type="submit"]{
+    width: 150px;
+    align-self: center;
+    padding: 5px 0;
+    font-weight: 600;
+    }
+}
+/* end of vacation form */
+
+/* star of submitted vacation*/
+.submit-vac{
+  position: relative;
+  min-height: calc(100vh - 50px);
+  background-color: var(--fifth-color);
+  background-image: url(../images/ezgif-3-f5b26d6a57.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.submit-vac::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.submit-vac .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.submit-vac .container .table{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--second-alpha-color);
+  min-width: 700px;
+  max-width: 1000px;
+  padding: 10px 20px 50px;
+  border-radius: 10px;
+  box-shadow: black 0px 0px 20px;
+}
+.submit-vac .table h1{
+  font-size: 40px;
+  color: var(--eighth-color);
+}
+.submit-vac .table table{
+  background-color: var(--fifth-color);
+  border-radius: 10px;
+  box-shadow: black 0px 0px 5px;  
+  border: solid var(--fifth-color) 5px;
+  margin: 0 10px;
+}
+.submit-vac table thead{
+  font-size: 20px;
+  color: var(--seventh-color);
+  font-weight: bold;
+}
+.submit-vac table tbody{
+  background-color: var(--seventh-color);
+}
+.submit-vac table td{
+  width: 100px;
+  height: 50px;
+  border: solid var(--fifth-color) 1px;
+  border-radius: 5px;
+
+} 
+.submit-vac table input{
+  padding: 10px;
+  width: 150px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: var(--first-color);
+  font-size: 16px;
+  font-weight: 500;
+}
+.submit-vac table button{
+  text-shadow: #000 1px 1px 1px;
+  width: 150px;
+  height: 22px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  color: var(--first-color);
+  
+}
+.submit-vac .sm{
+  width: 105px;
+}
+.mid{
+  text-align: center;
+  background-color: #9a8563;
+}
+.submit-vac .approve{
+  background-color: #A3B763;
+  margin-top: 5px;
+}
+.submit-vac .approve:hover{
+  background-color: rgba(115, 144, 114, 0.6);
+}
+.submit-vac .reject{
+  background-color: #AF2655;
+}
+.submit-vac .reject:hover{
+  background-color: rgba(176, 39, 87, 0.4);
+}
+.submit-vac .container button:hover{
+  cursor: pointer;
+}
+/* media quieries for submitted vacation */
+/* Mobile */
+@media (max-width: 767px) {
+  .submit-vac .container .table{
+    min-width: 100%;
+  }
+  .submit-vac .container h1 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  .submit-vac .container thead{
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .submit-vac .container input,
+  .submit-vac .container select{
+    font-size: 12px;
+    font-weight: 100;
+    padding: 3px 5px;
+    border-width: 3px;
+  }
+  .submit-vac .sm{
+    width: 75px;
+  }
+  .submit-vac input[type="submit"]{
+    width: 150px;
+    align-self: center;
+    padding: 5px 0;
+    font-weight: 600;
+    }
+}
+@media (max-width: 1199px) {
+  .submit-vac .container .table{
+    overflow-x: auto;
+    margin-left: 50px;
+  }
+}
+/* end of submitted vacation */
+
