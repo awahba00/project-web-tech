@@ -252,9 +252,9 @@ width: 100%;
   display: flex;
   flex-direction: column;
   background-color: var(--second-alpha-color);
-  min-width: 700px;
+  min-width: 500px;
   max-width: 1000px;
-  padding: 10px 20px 50px;
+  padding: 10px 20px;
   border-radius: 10px;
   box-shadow: black 0px 0px 20px;
   align-items: center;
@@ -262,13 +262,12 @@ width: 100%;
 .add-employee .container .form h1 {
   font-size: 40px;
   color: var(--eighth-color);
-  margin-bottom: 30px;
-  
+  margin: 10px 0;
 }
 .add-employee .container .form form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 5px;
   width: 100%;
 }
 .add-employee label {
@@ -370,9 +369,9 @@ width: 100%;
   display: flex;
   flex-direction: column;
   background-color: var(--second-alpha-color);
-  min-width: 700px;
+  min-width: 500px;
   max-width: 1000px;
-  padding: 10px 20px 50px;
+  padding: 10px 20px;
   border-radius: 10px;
   box-shadow: black 0px 0px 20px;
   align-items: center;
@@ -380,12 +379,12 @@ width: 100%;
 .edit-employee .container .form h1 {
   font-size: 40px;
   color: var(--eighth-color);
-  margin-bottom: 30px;
+  margin: 10px 0;
 }
 .edit-employee .container .form form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 5px;
   width: 100%;
 }
 .edit-employee label {
@@ -487,7 +486,7 @@ width: 100%;
   flex-direction: column;
   align-items: center;
   background-color: var(--second-alpha-color);
-  min-width: 700px;
+  min-width: 500px;
   max-width: 1000px;
   padding: 10px 20px 50px;
   border-radius: 10px;
@@ -594,9 +593,9 @@ width: 100%;
   display: flex;
   flex-direction: column;
   background-color: var(--second-alpha-color);
-  min-width: 700px;
+  min-width: 500px;
   max-width: 1000px;
-  padding: 10px 20px 50px;
+  padding: 10px 20px;
   border-radius: 10px;
   box-shadow: black 0px 0px 20px;
   align-items: center;
@@ -604,6 +603,7 @@ width: 100%;
 .vac-form .container .form h1 {
   font-size: 40px;
   color: var(--eighth-color);
+  margin: 10px 0;
 }
 .vac-form .container .form form {
   display: flex;
@@ -712,9 +712,9 @@ width: 100%;
   flex-wrap: wrap;
   align-items: center;
   background-color: var(--second-alpha-color);
-  min-width: 700px;
+  min-width: 500px;
   max-width: 1000px;
-  padding: 10px 20px 50px;
+  padding: 10px 20px;
   border-radius: 10px;
   box-shadow: black 0px 0px 20px;
 }
