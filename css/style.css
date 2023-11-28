@@ -33,16 +33,24 @@ a{
   padding-right: 50px;
 }
 /* media quieries */
-/* Small & Medium */
-@media (max-width: 1199px) {
-  .container{
-    width: 100%;
-  }
-}
 /* Large */
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
+  }
+}
+/* Small & Medium */
+@media (max-width: 1199px) {
+  .container{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .container{
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
